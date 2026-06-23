@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pavan Sai Boddeda – Python Backend Developer & AI/LLM Integration Specialist with 3.5+ years building high-performance REST APIs, microservices, and Generative AI systems." />
+  <meta name="keywords" content="Pavan Sai Boddeda, Python Developer, FastAPI, Backend Engineer, AI LLM, REST API, PostgreSQL, LangChain, OpenAI" />
+  <meta name="author" content="Pavan Sai Boddeda" />
+  <meta property="og:title" content="Pavan Sai Boddeda | Python Backend Developer" />
+  <meta property="og:description" content="Python Backend Developer & AI/LLM Integration Specialist. Building intelligent, scalable backend systems." />
+  <meta property="og:type" content="website" />
+  <title>Pavan Sai Boddeda | Python Backend Developer & AI Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Go to top">
+        <span class="logo-bracket">&lt;</span>PSB<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#experience" class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#certifications" class="nav-link" role="menuitem">Certs</a></li>
+        <li role="none"><a href="#education" class="nav-link" role="menuitem">Education</a></li>
+        <li role="none"><a href="#contact" class="nav-link nav-cta" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon sun">☀</span>
+          <span class="theme-icon moon">☽</span>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero" aria-label="Introduction">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+    <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge reveal-up" aria-label="Status">
+          <span class="badge-dot"></span>
+          Available for new opportunities
+        </div>
+        <h1 class="hero-name reveal-up" style="--delay:0.1s">
+          Pavan Sai<br /><span class="hero-name-accent">Boddeda</span>
+        </h1>
+        <div class="hero-title reveal-up" style="--delay:0.2s">
+          <span class="title-static">Python Backend Developer</span>
+          <span class="title-divider" aria-hidden="true"> · </span>
+          <span class="title-typing" id="typingText" aria-live="polite"></span>
+        </div>
+        <p class="hero-tagline reveal-up" style="--delay:0.3s">
+          Engineering intelligent, high-performance backend systems — <br class="break-lg" />
+          from scalable REST APIs to Generative AI pipelines.
+        </p>
+        <div class="hero-actions reveal-up" style="--delay:0.4s">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          <a href="assets/resume/Pavan_Sai_Boddeda_Resume.docx" download class="btn btn-ghost" aria-label="Download Resume">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Resume
+          </a>
+        </div>
+        <div class="hero-socials reveal-up" style="--delay:0.5s">
+          <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/pavan-sai-boddeda" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/pavansai9911/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LeetCode Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 00-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 00-1.209 2.104 5.35 5.35 0 00-.125.513 5.527 5.527 0 00.062 2.362 5.83 5.83 0 00.349 1.017 5.938 5.938 0 001.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 00-1.951-.003l-2.396 2.392a3.021 3.021 0 01-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 01.066-.523 2.545 2.545 0 01.619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 00-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0013.483 0zm-2.866 12.815a1.38 1.38 0 00-1.38 1.382 1.38 1.38 0 001.38 1.382H20.79a1.38 1.38 0 001.38-1.382 1.38 1.38 0 00-1.38-1.382z"/></svg>
+          </a>
+          <a href="mailto:pavansai9911@gmail.com" class="social-link" aria-label="Send Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual reveal-right" style="--delay:0.3s" aria-hidden="true">
+        <!-- <div class="profile-ring">
+          <div class="profile-placeholder">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="45" r="22" fill="var(--accent-primary)" opacity="0.3"/>
+              <path d="M20 100c0-22.1 17.9-40 40-40s40 17.9 40 40" fill="var(--accent-primary)" opacity="0.3"/>
+              <text x="60" y="51" text-anchor="middle" dominant-baseline="middle" font-family="Inter" font-weight="700" font-size="18" fill="var(--accent-primary)">PS</text>
+            </svg>
+          </div>
+          <div class="profile-ring-badge">
+            <span>3.5+ Yrs</span>
+          </div>
+        </div> -->
+        <div class="hero-visual reveal-right" style="--delay:0.3s" aria-hidden="true">
+          <div class="profile-ring">
+            <img
+              src="assets/images/car13.jpeg"
+              alt="Pavan Sai Boddeda"
+              width="200"
+              height="200"
+              style="width:100%;height:100%;object-fit:cover;border-radius:50%;"
+              loading="lazy"
+            />
+          </div>
+          <div class="profile-ring-badge">
+            <span>3.5+ Yrs</span>
+          </div>
+        </div>
+        <div class="hero-code-card glass">
+          <div class="code-header">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <span class="code-filename">pavan.py</span>
+          </div>
+          <pre class="code-body"><code><span class="ck">class</span> <span class="cn">PavanSai</span>:
+  role <span class="co">=</span> <span class="cs">"Python Backend Dev"</span>
+  exp  <span class="co">=</span> <span class="cm">3.5</span>  <span class="cc"># years</span>
+  stack <span class="co">=</span> [
+    <span class="cs">"FastAPI"</span>, <span class="cs">"PostgreSQL"</span>,
+    <span class="cs">"LangChain"</span>, <span class="cs">"Docker"</span>
+  ]
+  <span class="ck">def</span> <span class="cn">passion</span>(<span class="ci">self</span>):
+    <span class="ck">return</span> <span class="cs">"AI-powered backends"</span></code></pre>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section about-section" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Who I am</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="about-lead">
+            I'm a <strong>Python Backend Developer</strong> with 3.5+ years of experience turning complex business problems into clean, scalable engineering solutions.
+          </p>
+          <p>
+            My career spans high-stakes domains — enterprise logistics, clinical trials, quality management, and now Generative AI — giving me a broad yet deeply grounded perspective on what it takes to build systems that <em>actually work</em> in production.
+          </p>
+          <p>
+            At ennVee, I architected a multi-tenant logistics backend processing thousands of daily shipment events while simultaneously pioneering AI integration by building a Text-to-SQL RAG system using LangChain and OpenAI GPT — a tool that cut HR reporting time by 70% and earned recognition from project leadership.
+          </p>
+          <p>
+            I believe great engineering is invisible: users shouldn't notice the system, they should just feel its speed, reliability, and intelligence. That philosophy drives how I write code, design schemas, and ship features.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card glass reveal-up" style="--delay:0.1s">
+              <span class="stat-num">3.5<span class="stat-plus">+</span></span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card glass reveal-up" style="--delay:0.2s">
+              <span class="stat-num">20<span class="stat-plus">+</span></span>
+              <span class="stat-label">APIs Delivered</span>
+            </div>
+            <div class="stat-card glass reveal-up" style="--delay:0.3s">
+              <span class="stat-num">500<span class="stat-plus">+</span></span>
+              <span class="stat-label">Enterprise Users</span>
+            </div>
+            <div class="stat-card glass reveal-up" style="--delay:0.4s">
+              <span class="stat-num">5</span>
+              <span class="stat-label">Major Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details reveal-right">
+          <div class="detail-card glass">
+            <h3>Quick Info</h3>
+            <ul class="detail-list">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                India
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Python Backend · AI/LLM
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3A2 2 0 017 2c.24 1.24.66 2.45 1.25 3.58a2 2 0 01-.45 2.11L6.61 8.88a16 16 0 006.51 6.51l1.19-1.19a2 2 0 012.11-.45 12.84 12.84 0 003.58 1.25A2 2 0 0122 16.92z"/></svg>
+                +91-7671931344
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                pavansai9911@gmail.com
+              </li>
+            </ul>
+            <h3 style="margin-top:1.5rem">Interests</h3>
+            <div class="interest-tags">
+              <span class="tag">Chess</span>
+              <span class="tag">Problem Solving</span>
+              <span class="tag">Travel</span>
+              <span class="tag">Numismatics</span>
+              <span class="tag">LeetCode</span>
+            </div>
+            <h3 style="margin-top:1.5rem">Languages</h3>
+            <div class="interest-tags">
+              <span class="tag">English</span>
+              <span class="tag">Telugu</span>
+              <span class="tag">Hindi</span>
+            </div>
+            <a href="assets/resume/Pavan_Sai_Boddeda_Resume.docx" download
+               class="btn btn-primary" style="margin-top:1.75rem;width:100%;justify-content:center;"
+               aria-label="Download Resume">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section skills-section" aria-label="Technical skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">What I work with</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group glass reveal-up" style="--delay:0.0s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill primary">Python</span>
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">Flask</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Pydantic</span>
+            <span class="skill-pill">Pytest</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass reveal-up" style="--delay:0.1s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Databases & ORM</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill primary">PostgreSQL</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">SQLAlchemy</span>
+            <span class="skill-pill">SQLModel</span>
+            <span class="skill-pill">Database Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass reveal-up" style="--delay:0.2s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>AI / LLM</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill primary">LangChain</span>
+            <span class="skill-pill primary">OpenAI APIs</span>
+            <span class="skill-pill">RAG Pipelines</span>
+            <span class="skill-pill">Text-to-SQL</span>
+            <span class="skill-pill">Hugging Face</span>
+            <span class="skill-pill">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass reveal-up" style="--delay:0.3s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Cloud & DevOps</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Azure</span>
+            <span class="skill-pill primary">Docker</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">CI/CD</span>
+            <span class="skill-pill">JIRA</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass reveal-up" style="--delay:0.4s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <h3>Data Engineering</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Databricks</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">BeautifulSoup</span>
+            <span class="skill-pill">Crawl4AI</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass reveal-up" style="--delay:0.5s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Auth & Security</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill primary">JWT</span>
+            <span class="skill-pill primary">OAuth2</span>
+            <span class="skill-pill">RBAC</span>
+            <span class="skill-pill">Swagger/OpenAPI</span>
+            <span class="skill-pill">Postman</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass reveal-up" style="--delay:0.6s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+            </div>
+            <h3>Architecture</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">Microservices</span>
+            <span class="skill-pill">RBAC Design</span>
+            <span class="skill-pill">DB Optimization</span>
+            <span class="skill-pill">Agile / Scrum</span>
+            <span class="skill-pill">Code Review</span>
+          </div>
+        </div>
+
+        <div class="skill-group glass reveal-up" style="--delay:0.7s">
+          <div class="skill-group-header">
+            <div class="skill-group-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 010 14.14M4.93 19.07a10 10 0 010-14.14M12 2v2M12 20v2M2 12h2M20 12h2"/></svg>
+            </div>
+            <h3>Web & Tooling</h3>
+          </div>
+          <div class="skill-pills">
+            <span class="skill-pill">HTML</span>
+            <span class="skill-pill">CSS</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">GitHub</span>
+            <span class="skill-pill">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section experience-section" aria-label="Work experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Career journey</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- ennVee -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="timeline-dot active"></div>
+          </div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-company">ennVee</span>
+                <span class="timeline-badge current">Current</span>
+              </div>
+              <div class="timeline-role">Consultant – Python Developer II</div>
+              <div class="timeline-period">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Jan 2025 – Present
+              </div>
+            </div>
+            <div class="timeline-tech">
+              <span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">LangChain</span><span class="tech-tag">OpenAI APIs</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">Docker</span><span class="tech-tag">Git</span>
+            </div>
+
+            <div class="project-block">
+              <h4 class="project-name">▸ Integrated Logistics Management System (ILMS)</h4>
+              <ul class="timeline-list">
+                <li>Architected and delivered 20+ RESTful API endpoints powering core logistics operations — shipment tracking, inventory management, and dispatch scheduling — for multi-tenant enterprise clients.</li>
+                <li>Designed normalized PostgreSQL schemas with optimized indexes, reducing average query execution time by <strong>~35%</strong> and ensuring data integrity across high-volume transactions.</li>
+                <li>Implemented modular layered backend architecture (router → service → repository), reducing inter-module coupling by over <strong>40%</strong>.</li>
+                <li>Enforced API security with JWT, RBAC, and OAuth2-compliant flows — achieving zero unauthorized access incidents in production.</li>
+                <li>Integrated async background task processing, reducing API response latency by <strong>30%</strong> during peak load.</li>
+                <li>Containerized the application with Docker, reducing deployment overhead by <strong>~50%</strong>.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <h4 class="project-name">▸ Skill Matrix – AI-Powered NLP Query Engine</h4>
+              <ul class="timeline-list">
+                <li>Built a Text-to-SQL engine using LangChain and OpenAI APIs enabling non-technical HR users to query databases in plain English — eliminating manual SQL report generation.</li>
+                <li>Designed a RAG pipeline improving query accuracy and relevance by <strong>~60%</strong> over keyword-based search.</li>
+                <li>Engineered prompt templates reducing LLM hallucination errors by <strong>70%</strong>.</li>
+                <li>Served <strong>200+ internal users</strong> via FastAPI endpoints exposing the NLP interface in real time.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <h4 class="project-name">▸ LinkedIn Job Mapper</h4>
+              <ul class="timeline-list">
+                <li>Integrated LinkedIn APIs to retrieve live job postings and extract structured metadata at scale.</li>
+                <li>Built intelligent skill-matching algorithm generating skill-gap analytics for workforce planning.</li>
+                <li>Automated the end-to-end pipeline, reducing manual HR effort by approximately <strong>8 hours/week</strong>.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- SmartIMS -->
+        <div class="timeline-item reveal-right">
+          <div class="timeline-marker" aria-hidden="true">
+            <div class="timeline-dot"></div>
+          </div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-company">SmartIMS</span>
+              </div>
+              <div class="timeline-role">Associate Engineer I</div>
+              <div class="timeline-period">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Sep 2022 – Sep 2024
+              </div>
+            </div>
+            <div class="timeline-tech">
+              <span class="tech-tag">Python</span><span class="tech-tag">FastAPI</span><span class="tech-tag">PostgreSQL</span><span class="tech-tag">SQLAlchemy</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Git</span>
+            </div>
+
+            <div class="project-block">
+              <h4 class="project-name">▸ eQMS – Enterprise Quality Management System</h4>
+              <ul class="timeline-list">
+                <li>Engineered a full-stack QMS backend from the ground up, supporting document lifecycle management, audit trails, deviation tracking, and regulatory compliance for <strong>500+ enterprise users</strong>.</li>
+                <li>Built a dynamic multi-level approval workflow engine with configurable approval chains and SLA-based escalations — reducing manual process coordination by <strong>~45%</strong>.</li>
+                <li>Developed automated email notification system (SMTP), improving process turnaround time by <strong>30%</strong>.</li>
+                <li>Maintained <strong>&gt;80% unit and integration test coverage</strong> with Pytest across critical business modules.</li>
+                <li>Achieved <strong>99.5% uptime</strong> in production through robust error handling and input validation.</li>
+              </ul>
+            </div>
+
+            <div class="project-block">
+              <h4 class="project-name">▸ CTMS – Clinical Trial Management System</h4>
+              <ul class="timeline-list">
+                <li>Contributed to a healthcare-grade CTMS managing regulatory documentation, trial protocols, and patient enrollment records.</li>
+                <li>Built FastAPI-based APIs for trial document ingestion, versioning, and lifecycle management ensuring GxP and data integrity compliance.</li>
+                <li>Designed PostgreSQL schemas for clinical trial entities with optimized indexing for sub-second data retrieval.</li>
+                <li>Resolved <strong>15+ critical data integrity issues</strong> pre-production, contributing to zero compliance-related defects post go-live.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section projects-section" aria-label="Featured projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">What I've built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card glass reveal-up" style="--delay:0.0s">
+          <div class="project-card-header">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 3h15v13H1z"/><path d="M16 8h6v12H5v-5"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Integrated Logistics Management System</h3>
+          <p class="project-company">ennVee · Jan 2025 – Present</p>
+          <p class="project-desc">Multi-tenant enterprise backend processing thousands of daily shipment events with real-time tracking, inventory management, and dispatch scheduling.</p>
+          <ul class="project-highlights">
+            <li>20+ RESTful API endpoints serving enterprise clients</li>
+            <li>35% query performance gain via index tuning & schema normalization</li>
+            <li>JWT + RBAC + OAuth2 — zero unauthorized access incidents</li>
+            <li>50% reduction in deployment overhead through Docker containerization</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>JWT</span><span>OAuth2</span>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal-up featured-card" style="--delay:0.1s">
+          <div class="project-featured-badge">AI Featured</div>
+          <div class="project-card-header">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 110 20A10 10 0 0112 2z"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Skill Matrix – AI-Powered NLP Query Engine</h3>
+          <p class="project-company">ennVee · Jan 2025 – Present</p>
+          <p class="project-desc">Generative AI system enabling plain-English database queries (Text-to-SQL) using LangChain + OpenAI GPT, backed by a RAG pipeline grounded in live organizational data.</p>
+          <ul class="project-highlights">
+            <li>70% reduction in HR reporting time</li>
+            <li>RAG pipeline boosted accuracy from ~55% to ~90%+</li>
+            <li>70% fewer LLM hallucination errors through prompt engineering</li>
+            <li>200+ internal users served via FastAPI NLP interface</li>
+          </ul>
+          <div class="project-tech">
+            <span>LangChain</span><span>OpenAI GPT</span><span>RAG</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal-up" style="--delay:0.2s">
+          <div class="project-card-header">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">LinkedIn Job Mapper</h3>
+          <p class="project-company">ennVee · Jan 2025 – Present</p>
+          <p class="project-desc">Automated LinkedIn job ingestion and skill-matching pipeline generating skill-gap analytics for workforce planning via REST API outputs.</p>
+          <ul class="project-highlights">
+            <li>8+ hours/week of manual HR effort automated</li>
+            <li>Intelligent skill-matching algorithm for gap analytics</li>
+            <li>Data normalization pipelines using Pandas across multiple sources</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>LinkedIn API</span><span>Pandas</span><span>FastAPI</span><span>PostgreSQL</span>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal-up" style="--delay:0.3s">
+          <div class="project-card-header">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">eQMS – Enterprise Quality Management System</h3>
+          <p class="project-company">SmartIMS · Sep 2022 – Sep 2024</p>
+          <p class="project-desc">End-to-end Quality Management System backend supporting document lifecycle, audit trails, deviation tracking, and regulatory compliance workflows for large enterprises.</p>
+          <ul class="project-highlights">
+            <li>500+ enterprise users served in production</li>
+            <li>45% reduction in manual process coordination</li>
+            <li>99.5% uptime; >80% test coverage with Pytest</li>
+            <li>Multi-level configurable approval workflow engine</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQLAlchemy</span><span>SMTP</span><span>Pytest</span>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal-up" style="--delay:0.4s">
+          <div class="project-card-header">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View on GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">CTMS – Clinical Trial Management System</h3>
+          <p class="project-company">SmartIMS · Sep 2022 – Sep 2024</p>
+          <p class="project-desc">Healthcare-grade CTMS managing regulatory documentation, trial protocols, patient enrollment records, and clinical audit trails for research teams.</p>
+          <ul class="project-highlights">
+            <li>GxP and HIPAA-adjacent data privacy compliance</li>
+            <li>15+ critical data integrity issues resolved pre-production</li>
+            <li>Zero compliance-related defects post go-live</li>
+            <li>Sub-second data retrieval via optimized PostgreSQL indexing</li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Swagger/OpenAPI</span><span>GxP Compliance</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section id="certifications" class="section certs-section" aria-label="Certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Continuous learning</span>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+      <div class="certs-grid">
+
+        <div class="cert-card glass reveal-up" style="--delay:0.0s">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">The Complete Python Developer – Advanced</h3>
+            <div class="cert-meta">
+              <span class="cert-platform">Udemy</span>
+              <span class="cert-year">2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.1s">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">REST APIs with FastAPI and Python</h3>
+            <div class="cert-meta">
+              <span class="cert-platform">Udemy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.2s">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">Mastering SQL with PostgreSQL and MySQL</h3>
+            <div class="cert-meta">
+              <span class="cert-platform">Udemy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.3s">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">Data Analysis with Python: Pandas & NumPy</h3>
+            <div class="cert-meta">
+              <span class="cert-platform">Udemy</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-card glass reveal-up" style="--delay:0.4s">
+          <div class="cert-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="cert-body">
+            <h3 class="cert-name">Git & GitHub Masterclass</h3>
+            <div class="cert-meta">
+              <span class="cert-platform">Udemy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section education-section" aria-label="Education">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Academic background</span>
+        <h2 class="section-title">Education</h2>
+      </div>
+      <div class="edu-timeline">
+
+        <div class="edu-item reveal-up" style="--delay:0.0s">
+          <div class="edu-card glass">
+            <div class="edu-degree-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-degree">B.Tech – Computer Science & Engineering</h3>
+              <p class="edu-institution">DADI Institute of Engineering & Technology, JNTUK</p>
+              <div class="edu-meta">
+                <span class="edu-year">Aug 2022</span>
+                <span class="edu-cgpa">CGPA: 7.0 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-item reveal-up" style="--delay:0.15s">
+          <div class="edu-card glass">
+            <div class="edu-degree-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-degree">Intermediate (MPC)</h3>
+              <p class="edu-institution">NRI Junior College, Board of Intermediate Education (BIE AP)</p>
+              <div class="edu-meta">
+                <span class="edu-year">Apr 2016</span>
+                <span class="edu-cgpa">CGPA: 7.66 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ACHIEVEMENTS ========== -->
+  <section id="achievements" class="section achievements-section" aria-label="Key achievements">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">By the numbers</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="achievements-grid">
+
+        <div class="achievement-card glass reveal-up" style="--delay:0.0s">
+          <div class="achievement-num counter" data-target="20">0</div>
+          <div class="achievement-label">Production APIs Delivered</div>
+          <p class="achievement-desc">Across logistics, QMS, CTMS, and AI systems — zero critical post-deployment defects.</p>
+        </div>
+
+        <div class="achievement-card glass reveal-up" style="--delay:0.1s">
+          <div class="achievement-num"><span class="counter" data-target="35">0</span>%</div>
+          <div class="achievement-label">Query Performance Boost</div>
+          <p class="achievement-desc">Through strategic PostgreSQL index design, schema normalization, and ORM optimization.</p>
+        </div>
+
+        <div class="achievement-card glass reveal-up" style="--delay:0.2s">
+          <div class="achievement-num"><span class="counter" data-target="70">0</span>%</div>
+          <div class="achievement-label">HR Reporting Time Saved</div>
+          <p class="achievement-desc">Pioneered Generative AI at team level with a Text-to-SQL RAG system — recognized by project leadership.</p>
+        </div>
+
+        <div class="achievement-card glass reveal-up" style="--delay:0.3s">
+          <div class="achievement-num"><span class="counter" data-target="10">0</span>+</div>
+          <div class="achievement-label">Hours/Week Automated</div>
+          <p class="achievement-desc">Approval chains, job ingestion, and skill matching pipelines — saving manual effort across HR and ops.</p>
+        </div>
+
+        <div class="achievement-card glass reveal-up" style="--delay:0.4s">
+          <div class="achievement-num"><span class="counter" data-target="80">0</span>%+</div>
+          <div class="achievement-label">Test Coverage</div>
+          <p class="achievement-desc">Unit and integration test coverage with Pytest on critical modules, reducing bug-fix cycles in UAT.</p>
+        </div>
+
+        <div class="achievement-card glass reveal-up" style="--delay:0.5s">
+          <div class="achievement-num"><span class="counter" data-target="40">0</span>%</div>
+          <div class="achievement-label">Faster Developer Onboarding</div>
+          <p class="achievement-desc">Comprehensive Swagger/OpenAPI docs reduced integration time for new developers and third-party vendors.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section contact-section" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-eyebrow">Let's connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">I'm open to backend engineering roles, AI/LLM projects, and consulting opportunities.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="contact-cards">
+            <a href="mailto:pavansai9911@gmail.com" class="contact-card glass" aria-label="Email Pavan">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Email</span>
+                <span class="contact-card-value">pavansai9911@gmail.com</span>
+              </div>
+              <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/pavan-sai-boddeda" target="_blank" rel="noopener noreferrer" class="contact-card glass" aria-label="LinkedIn Profile">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">LinkedIn</span>
+                <span class="contact-card-value">pavan-sai-boddeda</span>
+              </div>
+              <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+            <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" class="contact-card glass" aria-label="GitHub Profile">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">GitHub</span>
+                <span class="contact-card-value">github.com/pavansai9911</span>
+              </div>
+              <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+            <a href="tel:+917671931344" class="contact-card glass" aria-label="Call Pavan">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3A2 2 0 017 2c.24 1.24.66 2.45 1.25 3.58a2 2 0 01-.45 2.11L6.61 8.88a16 16 0 006.51 6.51l1.19-1.19a2 2 0 012.11-.45 12.84 12.84 0 003.58 1.25A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div class="contact-card-content">
+                <span class="contact-card-label">Phone</span>
+                <span class="contact-card-value">+91-7671931344</span>
+              </div>
+              <svg class="contact-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <div class="contact-form glass" id="contactForm" role="form" aria-label="Contact form">
+            <h3>Send a Message</h3>
+            <p class="form-note">This form opens your email client with pre-filled details.</p>
+            <div class="form-group">
+              <label for="contactName">Your Name</label>
+              <input type="text" id="contactName" name="name" placeholder="Jane Smith" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email</label>
+              <input type="email" id="contactEmail" name="email" placeholder="jane@company.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="contactSubject">Subject</label>
+              <input type="text" id="contactSubject" name="subject" placeholder="Job Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" rows="4" placeholder="Hi Pavan, I'd like to discuss..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" id="sendMessageBtn" type="button">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-logo" aria-label="Back to top">
+            <span class="logo-bracket">&lt;</span>PSB<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Python Backend Developer · AI/LLM Engineer<br />Building intelligent systems, one API at a time.</p>
+        </div>
+        <div class="footer-nav">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Find Me</h4>
+          <div class="footer-social-links">
+            <a href="https://github.com/pavansai9911" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/pavan-sai-boddeda" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:pavansai9911@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+            <a href="https://leetcode.com/u/pavansai9911/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 00-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 00-1.209 2.104 5.35 5.35 0 00-.125.513 5.527 5.527 0 00.062 2.362 5.83 5.83 0 00.349 1.017 5.938 5.938 0 001.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 00-1.951-.003l-2.396 2.392a3.021 3.021 0 01-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 01.066-.523 2.545 2.545 0 01.619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 00-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0013.483 0zm-2.866 12.815a1.38 1.38 0 00-1.38 1.382 1.38 1.38 0 001.38 1.382H20.79a1.38 1.38 0 001.38-1.382 1.38 1.38 0 00-1.38-1.382z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footerYear"></span> Pavan Sai Boddeda. Designed & built with precision.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+          Top
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
